@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./wp-content/themes/sanbi/images/logob.png">
+
+    
+
+    <link rel="stylesheet" href="/wp-content/themes/sanbi/css/style.css">
+    <title>Aview Accounting</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+   
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/shtheme.com\/demosd\/sanbi\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e, 
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83d\udc26\u200d\ud83d\udd25", "\ud83d\udc26\u200b\ud83d\udd25")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-content/themes/sanbi/css/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://shtheme.com/demosd/sanbi/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/vendor/bootstrap.min.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='line-awesome-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/vendor/line-awesome.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='sanbi-slick-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/vendor/slick.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='sanbi-slick-theme-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/vendor/slick-theme.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='sanbi-css-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/style.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='sanbi-responsive-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/css/responsive.css?ver=6.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='sanbi-style-css' href='https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/style.css?ver=2023-12-08' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.15.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-6-css' href='https://shtheme.com/demosd/sanbi/wp-content/uploads/elementor/css/post-6.css?ver=1693384696' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='https://shtheme.com/demosd/sanbi/wp-content/uploads/elementor/css/global.css?ver=1693384696' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.8.1'
+        type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <link rel="https://api.w.org/" href="https://shtheme.com/demosd/sanbi/index.php?rest_route=/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://shtheme.com/demosd/sanbi/index.php?rest_route=/wp/v2/pages/11" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shtheme.com/demosd/sanbi/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.8.1" />
+    <link rel="canonical" href="https://shtheme.com/demosd/sanbi/" />
+    <link rel='shortlink' href='https://shtheme.com/demosd/sanbi/' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://shtheme.com/demosd/sanbi/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fshtheme.com%2Fdemosd%2Fsanbi%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://shtheme.com/demosd/sanbi/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fshtheme.com%2Fdemosd%2Fsanbi%2F&#038;format=xml" />
+    <meta name="generator" content="Elementor 3.15.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+</head>
+
+<body class="home wp-singular page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-11 wp-theme-sanbi elementor-default elementor-kit-6 elementor-page elementor-page-11">
+    <!-- ========== Preloader ========== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ========== Preloader ========== -->
+
+
+
+    <!-- ========== Site Header ========== -->
+    <header class="site-header d-lg-block d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-content">
+                        <!-- Header Left -->
+                        <div class="header-left">
+                            <div class="site-logo">
+                                
+                               <img src="wp-content/themes/sanbi/images/favlogo.png" alt="logo" /> 
+                            </div>
+                        </div>
+                        <!-- Header Left -->
+                        <!-- Header Right -->
+                        <div class="header-right">
+                            <div class="site-navigation">
+                                <ul id=" menu-menu-onepage" class=" ">
+                                    <li id="345" class="menu-item menu-item-type-custom menu-item-object-custom  nav-item 345"><a title="Home" class=" nav-link bx-nav " href="#home">Home</a></li>
+                                    <li id="346" class="menu-item menu-item-type-custom menu-item-object-custom  nav-item 346"><a title="About" class=" nav-link bx-nav " href="#about">About</a></li>
+                                    <li id="348" class="menu-item menu-item-type-custom menu-item-object-custom  nav-item 348"><a title="Pricing" class=" nav-link bx-nav " href="#pricing">Services</a></li>
+                                    <li id="351" class="menu-item menu-item-type-custom menu-item-object-custom  nav-item 351"><a title="Contact" class=" nav-link bx-nav " href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- Header Right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== Site Header ========== -->
+
+        <header class="site-mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                <!-- Header Left -->
+                <div class="header-left">
+                    <div class="site-logo">
+                    <img src="wp-content/themes/sanbi/images/favlogo.png" alt="logo" />
+                    </div>
+                </div>
+                <!-- Header Right -->
+                <div class="header-right">
+                    <div class="mobile-nav-toggle">
+                    <i class='bx bx-menu' style="font-size: 2rem; color: #fff;"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-navigation-wrap p-4" id="mobileNav">
+        <!-- Menu Close -->
+        <div class="nav-header d-flex justify-content-end">
+            <i class='bx bx-x hide-mobile-nav' style="font-size: 2rem; color: #fff;"></i>
+        </div>
+
+        <!-- Navigation Items -->
+        <nav class="mobile-nav mt-4">
+            <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    <!-- ========== Mobile Navigation ========== -->
+    <main>
+        <div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-a9022b6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a9022b6" data-element_type="section">
+                <div class="elementor-container elementor-column-gap-no">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec5dd6f" data-id="ec5dd6f" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-bd98851 elementor-align-left elementor-widget elementor-widget-bdevs-banner" data-id="bd98851" data-element_type="widget" data-widget_type="bdevs-banner.default">
+                                <div class="elementor-widget-container">
+
+                                    
+                                <section class="site-banner" id="home">
+                                    <div class="container h-100">
+                                        <div class="row h-100 justify-content-center align-items-center text-center">
+                                        <div class="col-lg-8">
+                                            <div class="banner-heading">
+                                            <div class="banner-text mb-4">
+                                                <div class="banner-title">
+                                                <h1>Aview Accounting <br> Services</h1>
+                                                </div>
+                                                <div class="banner-description">
+                                                <p>Professional. Transparent. Reliable</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <section class="sp-t about-section" id="about">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mb-5 mx-auto text-center">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                        <div class="sub-heading">
+                            <p>WHO WE ARE?</p>
+                        </div>
+                        <div class="heading-title">
+                            <h2>Aview Accounting Services</h2>
+                        </div>
+                        <div class="heading-description">
+                            <p>We empower businesses with precise, reliable, and personalized financial solutions.</p>
+                        </div>
+                        </div>
+                        <!-- Section Heading -->
+                    </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row mt-4 align-items-center about-content">
+                    <div class="col-lg-5 mb-lg-0 mb-4 text-center">
+                        <div class="ceo-image">
+                        <img src="wp-content/uploads/2023/08/calcu.jpg" alt="CEO Image" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="ceo-message-content ms-lg-4">
+                        <div class="ceo-message-text">
+                            <p>
+                            <strong>Aview Accounting Services</strong> is dedicated to helping individuals and businesses take control of their finances with clarity and confidence. 
+                            </p>
+                            <p>
+                            We specialize in a wide range of accounting services including <strong>accounting, bookkeeping, payroll, and tax reporting</strong> both locally and internationally.
+                            </p>
+                            <p>
+                            Whether you're just starting out or scaling up, Aview provides smart and support to help you make informed decisions and create long-term impact.
+                            </p>
+                            <p>
+                            <em>At Aview, we listen, we view, and we deliver because your success is always in sight.</em>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+
+          
+            <section class="sp-t mission-vision">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-4">
+                        <div class="section-heading">
+                        <div class="heading-title">
+                            <h2>MISSION & VISION</h2>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                    <!-- LEFT SIDE: Text -->
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="extended-feature-content">
+                        <!-- MISSION -->
+                        <div class="iconbox-secondary mb-4 d-flex align-items-start">
+                            <div class="item-icon me-3">
+                            <i class="bx bx-label"></i>
+                            </div>
+                            <div class="item-content">
+                            <h4>MISSION</h4>
+                            <p>To provide our clients timely, accurate and accessible accounting services that allow them to grow their businesses. We are committed to building lasting client relationships through transparency, integrity, and genuine care.</p>
+                            </div>
+                        </div>
+
+                        <!-- VISION -->
+                        <div class="iconbox-secondary mb-4 d-flex align-items-start">
+                            <div class="item-icon me-3">
+                            <i class="bx bx-label"></i>
+                            </div>
+                            <div class="item-content">
+                            <h4>VISION</h4>
+                            <p>To become the most trusted accounting partner for businesses, empowering entrepreneurs to grow with confidence through clear, reliable, and individualized financial services.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE: Image -->
+                    <div class="col-lg-7 text-center">
+                        <div class="circle-image-wrap">
+                        <img src="wp-content/uploads/2023/08/features-01.jpg" alt="Feature Image" class="img-fluid rounded-circle shadow">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+
+                <section class="sp-t sp-b our-values-simple">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-lg-8 mx-auto text-center mb-4">
+                            <h2 class="section-title">Our Values</h2>
+                            <p class="section-subtitle">
+                            The principles that guide our work and define our commitment to you.
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="value-item">
+                            <div class="value-icon">
+                                <i class='bx bxs-shield'></i>
+                            </div>
+                            <h5>Integrity</h5>
+                            <p>
+                                We uphold the highest standards of honesty and transparency in all our dealings.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="value-item">
+                            <div class="value-icon">
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h5>Excellence</h5>
+                            <p>
+                                We deliver exceptional service and results that exceed expectations.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="value-item">
+                            <div class="value-icon">
+                                <i class='bx bxs-group'></i>
+                            </div>
+                            <h5>Collaboration</h5>
+                            <p>
+                                We build strong relationships, working together to reach your goals.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="pricing-plan sp-tb" id="pricing">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-8 mx-auto text-center mb-5">
+                        <div class="heading-title">
+                        <h2>Our Services</h2>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <!-- Service 1 -->
+                    <div class="col-lg-3 pb-3 mb-lg-0 mb-4">
+                        <div class="pricing-plan-single p-5">
+                        <div class="plan-heading mb-5">
+                            <h3>Accounting & Bookkeeping</h3>
+                            <p>We provide accurate financial reporting, analysis to help you make informed decisions and keep your financial records organized and up to date.</p>
+                        </div>
+                        <div class="plan-action">
+                            <div class="mb-4">
+                            <button class="anchor-button primary button-lg" onclick="showDetails('accounting')">
+                                Get in Touch
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="col-lg-3 pb-3 mb-lg-0 mb-4">
+                        <div class="pricing-plan-single p-5">
+                        <div class="plan-heading mb-5">
+                            <h3>Taxation Preparation</h3>
+                           <p>We provide comprehensive tax reporting services, helping you minimize liabilities and maximize deductions.</p>
+                        </div>
+                        <div class="plan-action">
+                            <div class="mb-4">
+                            <button class="anchor-button primary button-lg" onclick="showDetails('taxation')">
+                                Get in Touch
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="col-lg-3 pb-3 mb-lg-0 mb-4">
+                        <div class="pricing-plan-single p-5">
+                        <div class="plan-heading mb-5">
+                            <h3>Payroll Management</h3>
+                            <p>Our payroll services ensure that your employees are paid accurately and on time, while also managing tax withholdings and compliance.</p>
+                        </div>
+                        <div class="plan-action">
+                            <div class="mb-4">
+                            <button class="anchor-button primary button-lg" onclick="showDetails('payroll')">
+                                Get in Touch
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="col-lg-3 pb-3 mb-lg-0 mb-4">
+                        <div class="pricing-plan-single p-5">
+                        <div class="plan-heading mb-5">
+                            <h3>Business Registration (Local)</h3>
+                            <p>We assist you in navigating the complexities of business formation, ensuring compliance with all legal requirements.</p>
+                        </div>
+                        <div class="plan-action">
+                            <div class="mb-4">
+                            <button class="anchor-button primary button-lg" onclick="showDetails('registration')">
+                                Get in Touch
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+
+                <!-- Modal -->
+                <div id="serviceModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3 id="serviceTitle"></h3>
+                    <p id="serviceText"></p>
+                </div>
+                </div>
+
+              
+                
+         
+
+    
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-ac2fe18 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ac2fe18" data-element_type="section">
+                <div class="elementor-container elementor-column-gap-no">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c313cd2" data-id="c313cd2" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-c1867b2 elementor-align-left elementor-widget elementor-widget-bdevs-contact" data-id="c1867b2" data-element_type="widget" data-widget_type="bdevs-contact.default">
+                                <div class="elementor-widget-container">
+                                  <section class="sp-tb" id="contact">
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- LEFT SIDE: Contact Info -->
+                                            <div class="col-lg-6">
+                                                <div class="section-heading mb-5">
+                                                    <div class="sub-heading">
+                                                        <p>CONTACT US</p>
+                                                    </div>
+                                                    <div class="heading-title">
+                                                        <h2>Get in Touch</h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="contact-infos mb-5">
+                                                    <!-- Email -->
+                                                    <div class="iconbox-secondary mb-4 d-flex align-items-center">
+                                                        <div class="item-icon me-4">
+                                                            <i class='bx bx-envelope' style="font-size: 32px; color: #45a4bb;"></i>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <h4>Email Us</h4>
+                                                            <p>Aviewacctg@gmail.com</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Call -->
+                                                    <div class="iconbox-secondary mb-4 d-flex align-items-center">
+                                                        <div class="item-icon me-4">
+                                                            <i class='bx bx-phone-call' style="font-size: 32px; color: #45a4bb;"></i>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <h4>Call Us</h4>
+                                                            <p>+63-999-509-2709</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Office (optional, example) -->
+                                                    <div class="iconbox-secondary mb-4 d-flex align-items-center">
+                                                        <div class="item-icon me-4">
+                                                            <i class='bx bx-map' style="font-size: 32px; color: #45a4bb;"></i>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <h4>Location</h4>
+                                                            <p>Mexico, Pampanga, Philippines</p>
+                                                        </div>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <!-- RIGHT SIDE: Ready to transform -->
+                                            <div class="col-lg-6 d-flex align-items-center justify-content-center text-center">
+                                                <div>
+                                                    <div class="heading-title mb-3">
+                                                        <h2>Ready to transform your accounting approach?</h2>
+                                                    </div>
+                                                    <div class="heading-description">
+                                                        <p>At Aview Accounting Services, we are passionate about helping businesses succeed. Let us take care of your accounting needs so you can focus on what you do best. Contact us today to learn more about how we can support your business.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <!-- ========== Site Footer ========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Footer Info -->
+                <div class="col-lg-3 mb-lg-0 mb-5">
+                    <div class="footer-info">
+                        <!-- Footer Logo -->
+                        <div class="footer-info-logo">
+                            <img src="wp-content/themes/sanbi/images/logob.png" alt="logo" />
+                        </div>
+                        <div class="footer-info-text my-4">
+                            <p>Professional. Transparent. Reliable</p>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="footer-social mt-4">
+                            <a href="https://www.facebook.com/people/Aview-Accounting-Services/61578303955662/" target="_blank" class="social-icon">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/aviewacctg?igsh=emV6d2trYWZuc244&utm_source=qr" target="_blank" class="social-icon">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/aview-accounting-services/" target="_blank" class="social-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Copyright -->
+                    <div class="copy-right text-center mt-5 pt-5">
+                        Copyright © Aview Accounting 2025. All rights reserved | by Kim Galvez
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ========== Site Footer ========== -->
+    <!-- ========== Back To Top ========== -->
+    <div class="back-to-top">
+        <div class="icon-top">
+            <!-- Top Icon -->
+            <i class='bx bx-up-arrow-circle'></i>
+            <!-- Top Icon -->
+        </div>
+        <!-- Top Text -->
+        <div class="top-text">
+            Top </div>
+        <!-- Top Text -->
+    </div>
+    <!-- ========== Back To Top ========== -->
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7" id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/shtheme.com\/demosd\/sanbi\/index.php?rest_route=\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7" id="contact-form-7-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/js/vendor/jquery.min.js?ver=6.8.1" id="jquery-3.6.4-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/js/vendor/bootstrap.min.js?ver=6.8.1" id="bootstrap-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/js/vendor/slick.min.js?ver=6.8.1" id="sanbi-slick-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/themes/sanbi/js/app.js?ver=6.8.1" id="sanbi-app-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/bdevs-elementor/assets/js/bdevs-elementor.js?ver=1.0.0" id="bdevs-elementor-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.1" id="elementor-webpack-runtime-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.1" id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+        /* <![CDATA[ */
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
+            },
+            "version": "3.15.1",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "e_optimized_css_loading": true,
+                "additional_custom_breakpoints": true,
+                "e_swiper_latest": true,
+                "landing-pages": true,
+                "e_global_styleguide": true
+            },
+            "urls": {
+                "assets": "https:\/\/shtheme.com\/demosd\/sanbi\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 237,
+                "title": "Sanbi",
+                "excerpt": "",
+                "featuredImage": "https:\/\/shtheme.com\/demosd\/sanbi\/wp-content\/uploads\/2023\/04\/blog-01.png"
+            }
+        };
+        /* ]]> */
+
+
+
+
+        
+                const mobileNav = document.getElementById('mobileNav');
+            const openBtn = document.querySelector('.mobile-nav-toggle');
+            const closeBtn = document.querySelector('.hide-mobile-nav');
+
+            openBtn.addEventListener('click', () => {
+                mobileNav.classList.add('show');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileNav.classList.remove('show');
+            });
+
+
+                    function showDetails(service) {
+            const modal = document.getElementById('serviceModal');
+            const title = document.getElementById('serviceTitle');
+            const text = document.getElementById('serviceText');
+
+            modal.style.display = 'block';
+
+            if (service === 'accounting') {
+                title.textContent = 'Accounting & Bookkeeping';
+                  text.innerHTML = `
+                    - Recording of Sales, Receipts, Purchases, Disbursements<br>
+                    - Data Reconciliation Services<br>
+                    - Financial Statements Preparation
+                `;
+            } 
+            else if (service === 'taxation') {
+                title.textContent = 'Taxation Preparation';
+                  text.innerHTML = `
+                    <strong>Business Taxes:</strong><br>
+                    - Value Added Taxes<br>
+                    - Percentage Taxes<br>
+                    - Expanded Withholding Taxes<br>
+                    - Withholding Taxes on Compensation<br>
+                    - BIR Summary List of Sales and Purchases/Importation (BIR RELIEF)<br><br>
+                    <strong>Income Taxes:</strong><br>
+                    - Quarterly Income Tax<br>
+                    - Annual Income Tax
+                `;
+            } 
+            else if (service === 'payroll') {
+                title.textContent = 'Payroll Management';
+                  text.innerHTML = `
+                    - Payroll Computation<br>
+                    - Monthly SSS, PHIC, HDMF Contributions<br>
+                    - Annual BIR Reports (BIR Form 2316, 1604CF)<br>
+                    - Monthly Income Taxes Withheld
+                `;
+            } 
+            else if (service === 'registration') {
+                title.textContent = 'Business Registration (Local)';
+                text.innerHTML = `
+                    - Department of Trade and Industry (for Sole Proprietorship)<br>
+                    - Securities and Exchange Commission (for Partnerships)<br>
+                    - Local Government Units (Barangay and City/Municipal Hall)<br>
+                    - Bureau of Internal Revenue<br>
+                    - Social Security System<br>
+                    - Philippine Health Insurance Corporation<br>
+                    - Home Development Mutual Fund
+                `;
+            }
+            }
+
+            function closeModal() {
+            document.getElementById('serviceModal').style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+            const modal = document.getElementById('serviceModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+            }
+
+
+
+
+
+
+    </script>
+    <script type="text/javascript" src="https://shtheme.com/demosd/sanbi/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.1" id="elementor-frontend-js"></script>
+</body>
+
+</html>
